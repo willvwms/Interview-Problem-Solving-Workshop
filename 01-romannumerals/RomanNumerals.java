@@ -11,6 +11,8 @@ class RomanNumerals {
 		System.out.println("IV \t4\noutput: " + String.valueOf(romanToInt("IV")));
 		System.out.println("IX \t9\noutput: " + String.valueOf(romanToInt("IX")));
 		System.out.println("XL \t40\noutput: " + String.valueOf(romanToInt("XL")));
+		System.out.println("LVIII \t58\noutput: " + String.valueOf(romanToInt("LVIII")));
+		System.out.println("MCMXCIV \t1994\noutput: " + String.valueOf(romanToInt("MCMXCIV")));
 	}
 
     public static int romanToInt(String roman) {
@@ -34,6 +36,7 @@ class RomanNumerals {
 		
 			if (skipNextChar) {
 				skipNextChar = false;
+				counter++;
 				continue;
 			}
 			
