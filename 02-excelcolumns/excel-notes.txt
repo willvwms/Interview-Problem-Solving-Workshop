@@ -1,0 +1,28 @@
+PROBLEM:
+* Given a column title as appears in an Excel sheet, return its corresponding column number.
+
+REQUIREMENTS:
+* Take any number of letters ("A", "AB", "CBE", etc)
+
+PSEUDOCODE: 
+
+helper function: getLetterValue(letter):
+	return the number value of a single letter
+
+helper function: raiseByPower(number, exponent):
+	return the number * base (26) raised to exponent
+
+function: getPositionNumber(excelColumnLetters):
+	
+	initialize an exponent by subtracting 1 from len of excelColumnLetters
+	
+	initialize an accumulator to zero
+	
+	loop: iterate thru each char of excelColumnLetters:
+		access curr letter of excelColumnLetters
+		get value of curr letter by invoking getLetterValue (curr letter) 
+		increase accumulator by invoking raiseByPower (letterValue, exponent)
+		decrement exponent 
+	
+	return accumulator
+
