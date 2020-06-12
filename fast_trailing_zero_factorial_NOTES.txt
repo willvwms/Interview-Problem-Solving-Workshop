@@ -1,0 +1,32 @@
+Problem:
+Write a function WITHOUT brute forcing (looping) to build up a factorial of n! which determines the number of trailing zeroes. 
+
+Heart of problem: 
+Trailing zeroes are result of factors that include factors (5 & 2)
+
+Basic solution: 
+* Number of pairs of (5 & 2) in factors will determine the number of trailing zeros.
+* Write a function that: 
+ - decomposes all factors up to n
+ - counts up all 5s
+ - counts up all 2s
+ - returns whichever count is smaller
+* Even numbers will always count as "2" because they contain it as a factor
+
+Hints:
+* use while loop
+
+Google Sheet of 1! to 30!:
+https://docs.google.com/spreadsheets/d/1cDkjc5xYhEn22cvTP4Zpl_VkEmSgs-7MTKukHGoLxfU
+
+Observations from the Google Sheet:
+n!			Zeroes
+0! to 4!: 	0 
+5! - 9!:	1 
+10! - 14!:	2 
+15! - 19!:	3 
+20!:		4
+21!: 		5
+22!:		7
+23! - 24!: 	9
+25!:		12
