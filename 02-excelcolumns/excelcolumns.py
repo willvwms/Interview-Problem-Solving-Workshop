@@ -4,7 +4,7 @@ def getLetterValue(letter):
 def raiseByPower(value, exponent):
 	return value * (26 ** exponent)	
 
-def convertColumnToNumber(letters):
+def excel_column_to_number(letters):
 	exponent = len(letters) - 1
 	accumulator	 = 0
 	for i in range(0, len(letters)):
@@ -16,6 +16,6 @@ def convertColumnToNumber(letters):
 
 def main():
 	inputchars = raw_input("Excel column letters: ").upper()
-	print(convertColumnToNumber(inputchars))
+	print(excel_column_to_number(inputchars))
 
 main()
