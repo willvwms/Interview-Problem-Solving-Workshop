@@ -1,0 +1,15 @@
+Question
+A palindrome is a word, phrase, number or other sequence of units that can be read the same way in either direction.
+Write a function that will check if the variable passed to it is a valid palindrome. Ignore any punctuation, capitalization, and spaces.
+
+Input: Variable that is a string or number
+Output: True or False
+
+Extension One
+Now ensure that numbers with leading 0s will pass as palindromes.
+
+Extension Two
+Given a list of entries, check if all entries are palidromes. Return true if all elements in the array are palidromes and false if they are not
+
+Final Part
+Write three unit tests for each part of the problem
