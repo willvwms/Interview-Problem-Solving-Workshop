@@ -1,0 +1,9 @@
+Given an unsorted linked list of company names, write a function that removes any duplicates from the list.
+Inputs: Linked list of nodes with job listings. 
+Output: Linked list of nodes with no duplicate job listings
+
+Consider code testability (write 1-2 unit tests that ensure your code is fully tested).
+
+
+Take 5-10 minutes before starting to go over Linked Lists here: 
+https://www.geeksforgeeks.org/linked-list-set-1-introduction/
